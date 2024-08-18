@@ -1,0 +1,35 @@
+$tomato: #ff5330;
+$tomatoHover: #fd8972;
+
+.myNotesContainer {
+  .addNote {
+    user-select: none;
+    background-color: $tomato;
+    border-radius: 50%;
+    border: none;
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10vh;
+    right: 8vw;
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      color: white;
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: $tomatoHover;
+    }
+  }
+}

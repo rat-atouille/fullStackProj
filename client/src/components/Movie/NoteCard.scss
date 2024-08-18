@@ -1,0 +1,85 @@
+$tomato: #ff5330;
+.noteCard {
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  width: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-height: 200px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: rgb(140, 144, 148) 0px 20px 30px -10px;    
+    transform: scale(1.03);
+  }
+  .decor {
+    width: 100%;
+    padding:0;
+    position: absolute;
+    margin:0;
+    top:0;
+    left:0;
+    z-index: 0;
+    background: #a2a2a2;
+    height: 18px;
+  }
+  .deleteNote {
+    position: absolute;
+    top: 0px; // Adjusted for better alignment
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    &:hover {
+      color: #808080;
+    }
+  }
+
+  .movieTitle {
+    margin: 0;
+    margin-top: 13px;
+    font-weight: 700;
+    font-size: 1.2rem; 
+    text-overflow: ellipsis;
+  }
+
+  .noteTitle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+    color: grey;
+    text-overflow: ellipsis;
+
+    // Add quotes around title if it has the 'hasTitle' class
+    &.hasTitle:before {
+      content: '"';
+    }
+    &.hasTitle:after {
+      content: '"';
+    }
+  }
+
+  .rated {
+    display: flex;
+    gap: 2px;
+    color: #ffd70e;
+  }
+
+  .commentSec {
+    margin: 0;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+    color: grey;
+    overflow:auto;
+    text-wrap:pretty;
+  }
+}

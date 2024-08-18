@@ -1,0 +1,166 @@
+$tomato: #ff5330;
+$tomatoHover: #fd8972;
+
+.allContainer {
+  height: calc(100%);
+  width: calc(100%);
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  .H1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    width: calc(100% - 70px);
+    span {
+      text-align: center;
+      margin: 2px 0 0 5px;
+      padding: 0;
+    }
+  }
+
+  .leftH1 {
+    width: 100%;
+    user-select: none;
+    margin: 0;
+    padding: 40px 0 0px 70px;
+    text-align: left;
+    display: block; 
+  }
+  
+  .centerH1 {
+    padding: 30px 0 0px 0;
+    user-select: none;
+    margin: 20vh 0 0px 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+
+  .centerDiv {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    max-height: calc(100vh - 180px); 
+    margin: 0;
+    padding-top: 15px;
+    align-items: center;
+    width: 100%;
+    
+    .list {
+      overflow-y: auto;
+      padding-top: 2.5%;
+      padding-bottom: 40px;
+      padding-left: 45px; 
+      margin-bottom: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 65px 60px;
+      width: calc(100% - 100px);
+      height: 100%;
+
+      // Ensure cards don't shrink too much
+      & > .MovieCard {
+        flex: 1 1 calc(20% - 60px); // Adjust for 5 cards per row or adjust according to screen size
+        max-width: calc(20% - 60px); // Ensure cards don't exceed this width
+        min-width: 180px; // Ensure cards don't shrink below this width
+      }
+
+      // Responsive adjustments
+      @media (max-width: 1200px) {
+        & > .MovieCard {
+          flex: 1 1 calc(25% - 60px); // Adjust for 4 cards per row
+          max-width: calc(25% - 60px);
+        }
+      }
+
+      @media (max-width: 900px) {
+        & > .MovieCard {
+          flex: 1 1 calc(33.33% - 60px); // Adjust for 3 cards per row
+          max-width: calc(33.33% - 60px);
+        }
+      }
+
+      @media (max-width: 600px) {
+        & > .MovieCard{
+          flex: 1 1 calc(50% - 60px); // Adjust for 2 cards per row
+          max-width: calc(50% - 60px);
+        }
+      }
+    }
+    
+    .notesList {
+      overflow-y: auto;
+      padding-top: 2.5%;
+      padding-bottom: 40px;
+      padding-left: 45px; 
+      margin-bottom: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 65px 60px;
+      width: calc(100vw - 100px);
+      height: 100%;
+
+      & > .noteCard {
+        flex: 1 1 calc(20% - 60px); 
+        max-width: calc(20% - 60px); 
+        min-width: 180px; 
+      }
+
+    }
+    .empty {
+      user-select: none;
+      margin: 0;
+      text-align: center;
+      padding: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      span {
+        margin-bottom: 7px;
+        padding:0;
+      }
+      p {
+        margin: 3px;
+        padding: 0;
+        font-weight: 600;
+        color: grey;
+        text-align: center;
+      }
+
+      button {
+        background-color: $tomato;
+        padding: 5px 10px;
+        border-radius: 15px;
+        width: 30%;
+        cursor: pointer;
+        font-weight: 600;
+        border: none;
+        font-size: 1rem;
+        margin-top: 25px;
+        a {
+          text-decoration: none;
+          color: white; 
+        }
+        &:hover {
+          background-color: $tomatoHover;
+        }
+      }  
+    }
+    
+    ::-webkit-scrollbar {
+      width: 0.7vw;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: rgb(229, 229, 229);
+    }  
+    ::-webkit-scrollbar-thumb {
+      background: #aeaeae;
+    }  
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }  
+  }
+}

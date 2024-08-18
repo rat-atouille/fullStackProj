@@ -1,0 +1,85 @@
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.translate {
+  padding-bottom: 16vh;
+}
+
+.explore_cont {
+  max-width: 60vw;
+  margin: auto;
+  position: relative;
+  flex-shrink: 0;
+  color:black;
+  animation: 0.7s fadeInUp;
+  display: flex;
+  align-items: center; /* y-axis */
+  flex-direction: column;
+}
+
+.ftext {
+  user-select: none;
+  font-family: 'Poppins';
+  text-align: center;
+  margin:0;
+  h1 {
+    max-width: 400px;
+    margin:0;
+    font-weight: 800;
+    color: black;
+    font-size: 2rem;
+    padding: 2rem;
+  }
+}
+
+.card-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  padding: 1vh 1vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+::-webkit-scrollbar {
+  height: 1vh;
+  width: 1vw;
+  max-width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aeaeae;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  cursor: pointer;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(5%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

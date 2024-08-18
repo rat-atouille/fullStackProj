@@ -1,0 +1,126 @@
+.sidebar {
+  font-family: poppins;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding-top: 60px;
+  z-index: 5;
+  transform: translateX(-100%); 
+  transition: transform 0.5s ease-in-out; 
+  
+  &.open {
+    transform: translateX(0); 
+  }
+
+  .logo {
+    color: black; 
+    font-size: 1.2rem;
+    font-weight: 700; 
+    margin-left: 20px;
+    position: absolute;
+    top: 2vh;
+  }
+
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 30px;
+      margin-left: 55px;
+      margin-bottom: 10px;      
+    }
+    margin-left: 45px;
+    margin-top: 5vh;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .menus {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;  
+    margin: 0;
+    margin-top: 7vh; 
+    width: 100%;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      font-size: 0.9rem;
+      cursor: pointer;
+
+      a, p {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 5px 2px;
+        margin: 1px 10px;
+        text-align: left;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+        border-radius: 10px;
+        &.active-link {
+          color: rgb(248, 73, 38);
+          font-weight: bold;
+          span {
+            color:rgb(248, 73, 38);
+          }
+        }
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20px;
+          height: 20px;
+          margin-left: 10px;
+          margin-right: 15px;
+          color: #222225;
+        }
+
+        &:hover {
+          background-color: hsl(0, 6%, 90%);
+        }
+      }
+    }
+
+    .logout {
+      margin-top: 19vh;
+    }
+    .dropdown {
+      padding: 0;
+      margin-left: 20px;
+    }
+
+    .home-dropdown {
+      .dropdown-icon {
+        margin-left: auto;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(142, 144, 149, 0.5);
+  z-index: 4;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  &.open {
+    opacity: 1;
+  }
+}

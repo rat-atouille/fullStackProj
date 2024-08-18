@@ -1,0 +1,28 @@
+.containerAll {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container_app {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  transition: margin-left 0.5s ease-in-out;
+
+  /* Adjust margin-left based on whether the sidebar is open */
+  margin-left: 0;
+
+  /* Adjust this when the sidebar is open */
+  &.sidebar-open {
+    margin-left: 200px; /* Match this to the width of the sidebar */
+    width: auto;
+  }
+}
