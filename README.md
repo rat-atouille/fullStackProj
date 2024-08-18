@@ -11,11 +11,7 @@ The app leverages the TMDb API to provide a rich database of movies, enabling us
 
 ![Screenshot 2024-08-18 012732](https://github.com/user-attachments/assets/ca838570-11b3-4079-9b71-70c85baa7a30)
 - **Track Ratings**: View and manage movie ratings.
-
-  ![Screenshot 2024-08-18 012153](https://github.com/user-attachments/assets/b20caeb3-87f1-41b9-a0eb-92f6b277d9e9)
-![Screenshot 2024-08-18 012203](https://github.com/user-attachments/assets/a3dd7854-3abc-432a-86b7-79fab127f63e)
 - **User Authentication**: Secure user authentication and personalized user experiences.
-
 - **Responsive Design**: Fully responsive UI for seamless use on any device.
 
 ## Tech Stack ##
