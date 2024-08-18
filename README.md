@@ -23,16 +23,16 @@ The app leverages the TMDb API to provide a rich database of movies, enabling us
 - **Responsive Design**: Fully responsive UI for seamless use on any device.
 
 ## Tech Stack ##
-### Frontend ###
-- **React** : JavaScript library for building user interfaces.
-- **SCSS** : CSS preprocessor for easier and more efficient styling.
-### Backend ###
-- **Node.js**: JavaScript runtime for server-side logic.
-- **Express.js**: Web framework for building the backend API.
-### Database ###
-- **MySQL**: Relational database for storing user data, movie details, and watchlists.
-### API ###
-- **TMDb API**: Provides access to a vast database of movie information.
+  ### Frontend ###
+  - **React** : JavaScript library for building user interfaces.
+  - **SCSS** : CSS preprocessor for easier and more efficient styling.
+  ### Backend ###
+  - **Node.js**: JavaScript runtime for server-side logic.
+  - **Express.js**: Web framework for building the backend API.
+  ### Database ###
+  - **MySQL**: Relational database for storing user data, movie details, and watchlists.
+  ### API ###
+  - **TMDb API**: Provides access to a vast database of movie information.
 
 ## License ##
 This project is licensed under the MIT License - see the LICENSE file for details.
