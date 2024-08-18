@@ -4,9 +4,11 @@ The app leverages the TMDb API to provide a rich database of movies, enabling us
 
 ## Features ##
 <img src="https://github.com/user-attachments/assets/6b9900d5-0646-440b-a874-341987483db6" alt="Search Movies" width="500"/>
+
 - **Search Movies**: Search for movies using the TMDb API.
 
   ![Screenshot 2024-08-18 012503](https://github.com/user-attachments/assets/02ec4c01-128b-429d-937f-aa7626f735b6)
+
 - **Organize Watchlist**: Add, remove, and categorize movies in your watchlist.
 
 ![Screenshot 2024-08-18 012732](https://github.com/user-attachments/assets/ca838570-11b3-4079-9b71-70c85baa7a30)
