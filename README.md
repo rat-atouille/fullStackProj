@@ -9,7 +9,7 @@
 - **User Authentication**: Secure user authentication and personalized user experiences.
 - **Responsive Design**: Fully responsive UI for seamless use on any device.
 
-<img src="(https://github.com/rat-atouille/movieTracker/blob/main/gif/screen-capture.gif" width="400" height="400" />
+![Image of a GIF](gif/screen-capture.gif)
 - demo
 
 ## Tech Stack ##
